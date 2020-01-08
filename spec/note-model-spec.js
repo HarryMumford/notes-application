@@ -4,9 +4,3 @@ describe('Note', () => {
     expect(newNote.showText()).toEq('this is a note')
   })
 })
-
-describe('test fail color', () => {
-  it('fails a test', () => {
-    expect(1).toEq(2)
-  })
-})

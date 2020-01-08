@@ -14,5 +14,9 @@
   <script src='lib/noteListView.js'></script>
   <script src='spec/jsSpec.js'></script>
   <script src="lib/note-controller.js"></script>
+  <script>
+    var noteController = new NoteController(new NoteList())
+    noteController.createNoteListView()
+  </script>
 </body>
 </html>
