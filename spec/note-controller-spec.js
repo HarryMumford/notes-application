@@ -4,7 +4,7 @@ describe('NoteController', () => {
       var noteController = new NoteController(new NoteList())
       element = { innerHTML: 'something' }
       noteController.createNoteListView(element)
-      output = '<ul><li><div><a href="#notes/0">hello my name is harry</a></div></li></ul>'
+      output = '<ul><li><div>hello my name is harry</div></li></ul>'
       expect(element.innerHTML).toEq(output)
     })
   })
