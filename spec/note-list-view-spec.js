@@ -6,7 +6,9 @@ describe('NoteListView', () => {
       noteList.createNote('this is a second note')
       var noteListView = new NoteListView(noteList)
 
-      var expectedOutput = '<ul><li><div>this is a note</div></li><li><div>this is a second note</div></li></ul>'
+      var firstNoteHTML = '<li><div><a href="#notes/0">this is a note</a></div></li>'
+      var secondNoteHTML = '<li><div><a href="#notes/1">this is a second note</a></div></li>'
+      var expectedOutput = '<ul>' + firstNoteHTML + secondNoteHTML + '</ul>'
       expect(noteListView.toHTML()).toEq(expectedOutput)
     })
   })
